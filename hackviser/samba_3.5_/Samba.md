@@ -4,12 +4,14 @@ This system exposed the **samba-cry** vulnerability,just came shortly after **Wa
 Target OS: linux
 
 Date: 10/02/2026
+
 Objective: 
 ```sh
 What is the secret in the /secret.txt file?
 ```
 
 RECON
+
 Nmap scan:
 
 ![nmap](nmap_scan.png)
