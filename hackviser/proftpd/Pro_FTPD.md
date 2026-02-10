@@ -1,6 +1,9 @@
 Target OS: linux
+
 Date:  10/02/2026
+
 Objective: Exploit and read contents of /secret.txt
+
 RECON:
 Nmap scan revealed the target system was running the following port with one port 21 "Pro-FTPD" being of interest.
 ![nmap](nmap.png)
@@ -28,7 +31,7 @@ At first the exploit fails since it can't write the **php** payload into */var/w
 Gaining access:
 ![acess](gaining_access.png)
 
-Spawining a shell using python:
+Spawning a shell using python:
 ![shell](spawn_a_shell.png)
 Objective:
 ```sh
