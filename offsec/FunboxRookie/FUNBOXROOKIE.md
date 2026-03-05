@@ -42,7 +42,7 @@ The zip files were password protected hence use tools to crack that password:
 But since the files are many,this is where the power of automation comes in,use python to crack the files password:
 Python script: 
 
-![python_script]
+![python_script](script.py)
 Cracking the zip files with python gave the following passwords:
 
 ![paswd](passwords.png)
@@ -73,3 +73,7 @@ The mysql history file:
 Leveraging it would allow privilege escalation due to unrestricted sudo access, which allowed root user access to the system.
 Now proof was "loot" root flag 
 ![root](root.png)
+
+
+Areas of improvement:
+![areas](areas.png)
