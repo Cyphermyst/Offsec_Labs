@@ -4,7 +4,7 @@ Platform: Portswigger
 
 Date: 13/03/2026
 
-Objective: Retrieve contents of ** /etc/passwd **
+Objective: Retrieve contents of **/etc/passwd**
 
 RECON
 
@@ -17,7 +17,7 @@ The website is an e-commerce website.
 
 Identifying the target:
 
-![target](objective.png)
+![target](targer.png)
 
 
 EXPLOITATION
