@@ -31,7 +31,7 @@ The developers made it in such a way that every file to be retrieved must have a
 
 Basic request to the site reveals:
 
-![request](request.png)
+![requests](request.png)
 
 Now to reveal the contents of **/etc/passwd** we need to use null byte plus the site's images files extension which is .jpg to avoid detection.
 
