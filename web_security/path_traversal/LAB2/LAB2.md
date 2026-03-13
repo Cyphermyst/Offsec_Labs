@@ -40,3 +40,4 @@ Payload:
 ![final](final.png)
 
 This works showing that developers prevented users accessing  file by stripping off the absolute path yet it still can be used  for path traversal.
+
