@@ -6,50 +6,86 @@
 
 
 - LEVEL 0
+
+
 Username: bandit0
+
 Password: bandit0
+
 Login Command:
+
 ssh -p 2220 bandit0@bandit.labs.overthewire.org
+
 Level 0 → Level 1
 
 
 - LEVEL 1
+
+
 Username: bandit1
+
 Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+
 Login Command:
+
 ssh -p 2220 bandit1@bandit.labs.overthewire.org
+
 Level 1 → Level 2
 
 
 - LEVEL 2
+
+
 Username: bandit2
+
 Password:      263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+
 Login Command:
+
 ssh -p 2220 bandit2@bandit.labs.overthewire.org
+
 Level 2 → Level 3
 
 
 - LEVEL 3
+
+
 Username: bandit3
+
 Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+
 Login Command:
+
 ssh -p 2220 bandit3@bandit.labs.overthewire.org
+
 Level 3 → Level 4
 
 
 - LEVEL 4
+
+
 Username: bandit4
+
 Password: 
+
 Login Command:
+
 ssh -p 2220 bandit4@bandit.labs.overthewire.org
+
 Level 4 → Level 5
 
 
 LEVEL 5
+
+
 Username: bandit5
+
 Password: 
+
 Login Command:
+
 ssh -p 2220 bandit5@bandit.labs.overthewire.org
+
 Level 5 → Level 6
 
 
