@@ -29,7 +29,10 @@ The request had two parts which request for : productId and StoreId
 
 ![request](request.png)
 
+
 EXPLOITATION
+
+
 We try both fields to see if any is vulnerable to command injection and the storeId field returns some good info so we use it to complete the objective.
 
 ![final](final.png)
