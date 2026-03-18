@@ -26,7 +26,7 @@ Its an e-commerce site running.
 
 Now our target again is the "submit feedback function" on 
 
-[target](target.png)
+![target](target.png)
 
 EXPLOITATION
 
