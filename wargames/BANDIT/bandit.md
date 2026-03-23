@@ -34,6 +34,9 @@ Objective:
 ```
 The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH.
 Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.
+
+Command:
+	cat readme
 ```
 
 
@@ -53,6 +56,10 @@ Level 1 → Level 2
 Objective:
 ```
 The password for the next level is stored in a file called - located in the home directory
+
+command:
+
+	cat "./-"
 ```
 
 Username: bandit2
@@ -74,6 +81,9 @@ Level 2 → Level 3
 Objective:
 ```
 The password for the next level is stored in a file called --spaces in this filename-- located in the home directory
+
+Command:
+	cat "./--spaces in this filename--"
 ```
 
 Username: bandit3
@@ -95,6 +105,9 @@ Objective:
 ```
 The password for the next level is stored in a hidden file in the inhere directory.
 
+Command:
+	ls -la
+
 ```
 
 Username: bandit4
@@ -114,7 +127,13 @@ LEVEL 5
 
 Objective:
 ```
-The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.
+The password for the next level is stored in the only human-readable
+file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.
+
+Command:
+
+	find . -type f -exec file {} +  | grep text
+
 ```
 
 
@@ -144,7 +163,9 @@ The password for the next level is stored in a file somewhere under the inhere d
     human-readable
     1033 bytes in size
     not executable
+Command:
 
+find inhere -type f -size 1033c ! -executable -exec file {} + | grep text
 
 ```
 
@@ -170,6 +191,9 @@ The password for the next level is stored somewhere on the server and has all of
     owned by group bandit6
     33 bytes in size
 
+
+find / -type f -user bandit7 -group bandit6 -size 33c
+
 ```
 
 Username: bandit7
@@ -189,6 +213,10 @@ LEVEL 8
 Objective:
 ```
 The password for the next level is stored in the file data.txt next to the word millionth
+
+
+Command: 
+	cat data.txt | grep "millionth"
 
 ```
 Username: bandit8
@@ -211,6 +239,10 @@ Objective:
 
 ```
 The password for the next level is stored in the file data.txt, which contains base64 encoded data
+
+
+Command:
+	echo "The base64 encoded string" | base64 --decode
 ```
 
 
@@ -232,6 +264,10 @@ LEVEL 10
 Objective:
 ```
 The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
+
+Command:
+
+	use this side to do rot13 https://www.dcode.fr/caesar-cipher
 ```
 
 
