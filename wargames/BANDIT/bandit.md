@@ -66,7 +66,7 @@ Level 3 → Level 4
 
 Username: bandit4
 
-Password: 
+Password: 	2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 
 Login Command:
 
@@ -78,13 +78,33 @@ Level 4 → Level 5
 LEVEL 5
 
 
+Objective:
+```
+The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
+
+    human-readable
+    1033 bytes in size
+    not executable
+
+
+Commands:
+
+find . -type f -exec file {} +  | grep text
+
+```
+
+
 Username: bandit5
 
-Password: 
+
+Password: 	4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+
 
 Login Command:
 
+
 ssh -p 2220 bandit5@bandit.labs.overthewire.org
+
 
 Level 5 → Level 6
 
