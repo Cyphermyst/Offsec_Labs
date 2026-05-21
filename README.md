@@ -1,4 +1,4 @@
-OFFSEC_LABS started on    *25/12/2025***
+OFFSEC_LABS started on    25/12/2025
 
 Offensive security writeups and notes.
 
