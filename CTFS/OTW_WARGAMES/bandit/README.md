@@ -1,4 +1,3 @@
-
 This is overthewire wargemes passwords as of 2026 May:
 bandit0 password:
  bandit0
@@ -73,12 +72,104 @@ password for bandit 8:
 GOAL:
 ```
 Bandit Level 8 → Level 9
-The password for the next level is stored in the file data.txt and is the only line of text that occurs only once	
+```
+The password for the next level is stored in the file data.txt next to the word millionth
 ```	
 login:
  ssh -p 2220 bandit7@bandit.labs.overthewire.org
 
+![img](bandit7.png)
+
 commands:
+cat data.txt | grep "millionth"
 
 password for bandit9:
-	
+	 dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+
+
+
+# bandit 9
+
+GOAL:
+```
+The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
+```
+
+![img](bandit8.png)
+
+commands:
+cat data.txt | sort | uniq -u
+
+password for bandit 10
+	4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+
+#	bandit 10
+login command:
+	 ssh -p 2220 bandit9@bandit.labs.overthewire.org
+GOAL
+```
+Bandit Level 9 → Level 10
+The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
+```
+
+![img](bandit9.png)
+
+commands:
+	 cat data.txt | strings | grep "=="
+
+password for bandit 11:
+	FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+
+
+#	bandit 11
+
+GOAL:
+```
+The password for the next level is stored in the file data.txt, which contains base64 encoded data
+```
+login command:
+
+	ssh -p 2220 bandit10@bandit.labs.overthewire.org
+commands:
+
+echo "VGhlIHBhc3N3b3JkIGlzIGR0UjE3M2ZaS2IwUlJzREZTR3NnMlJXbnBOVmozcVJyCg" | base64 -d
+
+password for bandit 12:
+	dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
+# bandit 12
+
+GOAL:
+```
+Bandit Level 11 → Level 12
+The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
+```
+login command:
+ ssh -p 2220 bandit11@bandit.labs.overthewire.org
+commands:
+
+![img](bandit11.png)
+
+// site: https://www.dcode.fr/rot-13-cipher
+
+rot-13
+password for bandit 13:
+	7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+
+#	bandit 13
+
+GOAL:
+```
+The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed. For this level it may be useful to create a directory under /tmp in which you can work. Use mkdir with a hard to guess directory name. Or better, use the command “mktemp -d”. Then copy the datafile using cp, and rename it using mv (read the manpages!)
+```
+Login command:
+
+ ssh -p 2220 bandit12@bandit.labs.overthewire.org
+
+commands:
+
+
+password for bandit 14
+
+
+
