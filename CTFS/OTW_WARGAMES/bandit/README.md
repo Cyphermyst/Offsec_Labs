@@ -166,10 +166,55 @@ Login command:
 
  ssh -p 2220 bandit12@bandit.labs.overthewire.org
 
-commands:
+![img](bandit12.png)
 
+commands:
+xxd -r <data.txt> // to reverse it to binary
+bzip -d <file.bz>
+gzip -d <file.gz>
+tar -xf <file.tar>
 
 password for bandit 14
+	FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+
+#	bandit 14
+GOAL:
+```
+Bandit Level 13 → Level 14
+The password for the next level is stored in /etc/bandit_pass/bandit14 and can only be read by user bandit14. For this level, you don’t get the next password, but you get a private SSH key that can be used to log into the next level. Look at the commands that logged you into previous bandit levels, and find out how to use the key for this level.
+If you need help with this level: a hint file can be found in the home directory.
+Make sure to read the error messages as they are informative.
+```
+login command:
+	 ssh -p 2220 bandit13@bandit.labs.overthewire.org
+
+commands:
+scp -P 2220 bandit13@@bandit.labs.overthewire.org:/home/bandit13/sshkey.private .
+// didn't really know that using scp you must specify port with -P 
+// login with the sshkey now
+// assign permission to the keysudo chmod 600 sshkey.private 
+ssh -p 2220 -i sshkey.private bandit14@bandit.labs.overthewire.org
+// cat /etc/bandit_pass/bandit14
+
+![img](bandit13_fail.png)
+
+![img](bandit13.png)
+
+password for bandit 15:
+	MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
 
 
+# bandit 15
+GOAL:
+```
+Bandit Level 14 → Level 15
+The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
+```
+login command:
+	ssh -p 2220 bandit15@bandit.labs.overthewire.org
+
+commands:
+
+password for bandit 16:
+	
 
