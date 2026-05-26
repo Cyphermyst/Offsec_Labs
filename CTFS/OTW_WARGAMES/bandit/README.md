@@ -312,16 +312,38 @@ password for bandit 15:
 
 GOAL:
 
-	Bandit Level 14 → Level 15
+	Bandit Level 14 → Level 15 ✅
 	The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
 
 login command:
 
-	ssh -p 2220 bandit15@bandit.labs.overthewire.org
+	ssh -p 2220 bandit14@bandit.labs.overthewire.org
+
+commands:
+nc localhost 30000
+
+// submit password for bandit15 here
+
+password for bandit 16:
+	8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+
+#	bandit 16
+
+GOAL	
+	Bandit Level 15 → Level 16 ✅
+	The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL/TLS encryption
+	
+login commands:
 
 commands:
 
+openssl s_client -connect localhost:30001
 
-password for bandit 16:
-	
+// issue the password for bandit 16 when prompted with "read R BLOCK"
 
+
+![img](bandit15.png)
+
+
+password for bandit17:
+	kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
