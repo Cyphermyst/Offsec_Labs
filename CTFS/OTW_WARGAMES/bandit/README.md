@@ -1,5 +1,7 @@
 This is overthewire wargemes passwords as of Tuesday May 2026 :
 
+![wargames](wargames_1983.gif)
+
 bandit0 password:
  bandit0
 
