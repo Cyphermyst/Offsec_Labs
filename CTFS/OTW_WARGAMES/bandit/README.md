@@ -72,9 +72,8 @@ password for bandit 8:
 GOAL:
 ```
 Bandit Level 8 → Level 9
-```
 The password for the next level is stored in the file data.txt next to the word millionth
-```	
+```
 login:
  ssh -p 2220 bandit7@bandit.labs.overthewire.org
 
@@ -93,7 +92,6 @@ password for bandit9:
 GOAL:
 ```
 The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
-```
 
 ![img](bandit8.png)
 
