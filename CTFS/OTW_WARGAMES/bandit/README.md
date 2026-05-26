@@ -70,10 +70,10 @@ password for bandit 8:
 
 # bandit 8 
 GOAL:
-```
+"""
 Bandit Level 8 → Level 9
 The password for the next level is stored in the file data.txt next to the word millionth
-```
+"""
 login:
  ssh -p 2220 bandit7@bandit.labs.overthewire.org
 
@@ -90,7 +90,6 @@ password for bandit9:
 # bandit 9
 
 GOAL:
-```
 The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
 
 ![img](bandit8.png)
@@ -105,10 +104,9 @@ password for bandit 10
 login command:
 	 ssh -p 2220 bandit9@bandit.labs.overthewire.org
 GOAL
-```
+
 Bandit Level 9 → Level 10
 The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
-```
 
 ![img](bandit9.png)
 
@@ -122,9 +120,9 @@ password for bandit 11:
 #	bandit 11
 
 GOAL:
-```
+"""
 The password for the next level is stored in the file data.txt, which contains base64 encoded data
-```
+"""
 login command:
 
 	ssh -p 2220 bandit10@bandit.labs.overthewire.org
@@ -138,10 +136,12 @@ password for bandit 12:
 # bandit 12
 
 GOAL:
-```
+
+"""
 Bandit Level 11 → Level 12
 The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
-```
+"""
+
 login command:
  ssh -p 2220 bandit11@bandit.labs.overthewire.org
 commands:
@@ -157,9 +157,10 @@ password for bandit 13:
 #	bandit 13
 
 GOAL:
-```
+
+"""
 The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed. For this level it may be useful to create a directory under /tmp in which you can work. Use mkdir with a hard to guess directory name. Or better, use the command “mktemp -d”. Then copy the datafile using cp, and rename it using mv (read the manpages!)
-```
+"""
 Login command:
 
  ssh -p 2220 bandit12@bandit.labs.overthewire.org
@@ -177,12 +178,13 @@ password for bandit 14
 
 #	bandit 14
 GOAL:
-```
+
+"""
 Bandit Level 13 → Level 14
 The password for the next level is stored in /etc/bandit_pass/bandit14 and can only be read by user bandit14. For this level, you don’t get the next password, but you get a private SSH key that can be used to log into the next level. Look at the commands that logged you into previous bandit levels, and find out how to use the key for this level.
 If you need help with this level: a hint file can be found in the home directory.
 Make sure to read the error messages as they are informative.
-```
+"""
 login command:
 	 ssh -p 2220 bandit13@bandit.labs.overthewire.org
 
@@ -204,10 +206,11 @@ password for bandit 15:
 
 # bandit 15
 GOAL:
-```
+
+"""
 Bandit Level 14 → Level 15
 The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
-```
+"""
 login command:
 	ssh -p 2220 bandit15@bandit.labs.overthewire.org
 
