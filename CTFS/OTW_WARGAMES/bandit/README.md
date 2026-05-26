@@ -167,7 +167,7 @@ login command:
 	 ssh -p 2220 bandit9@bandit.labs.overthewire.org
 GOAL
 ```
-Check
+The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
 ```
 
 Bandit Level 9 → Level 10
@@ -196,6 +196,9 @@ GOAL:
 ```
 The password for the next level is stored in the file data.txt, which contains base64 encoded data
 ```
+
+![img](bandit10.png)
+
 login command:
 
 	ssh -p 2220 bandit10@bandit.labs.overthewire.org
